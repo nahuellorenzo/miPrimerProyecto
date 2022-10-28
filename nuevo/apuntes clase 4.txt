@@ -1,0 +1,98 @@
+NO USAR BR 
+ESTILO EN LINEA TAMBIEN DESCARTADO, NO SE USA!!!
+
+clases returilizables con BEM
+se nombre las clases con doble guion bajo
+ejemplo si 
+tengo
+<section class="informacion">
+	<article class=informacion__article">
+		<p class="informacion__article__p">
+		<p class="informacion__article__p p--negrita">
+
+esto es segun si la etiqueta de abajo como article es hijo de section
+
+con font-weight: bold hago negrita 
+
+en caso de que tenga dos p como en el ejemplo de ahi arriba y quiero que un p tenga las mismas propiedades que el otro pero uno este en negrita lo q hago es poner a un p otra clase mas como le puse ahora la p--negrita. 
+Entonces lo que hago es que el p--negrita le pongo el atributo para que sea en negrita y ademas siga teniendo los mismos atributos de la clase informacion__article__p para ambos p asi no tengo que volver a copiar con clases distintas los mismos atributos mas sumado el de negrita en uno de las clases dde los p.
+
+el padding es el ancho que hay entre el borde y el contenido
+el margin esta despues del borde 
+si tengo dos cajas pegadas y le agrego margin se separan 
+el contenido es lo que escribo dentro de la caja puede ser un p
+el width es el ancho
+el height es la altura
+el padding es el relleno
+
+la propiedad overflow: hidden lo que hace es que si mi contenido no entra en la caja y se se sale de la misma hace que no se salga y entre lo que llegue a entrar el resto no se va 
+la propiedad overflow: scroll lo que haces es que si mi contenido no entra en la caja te permite una barra para sccrollear y ver todo el contenido y asi entre en la caja
+overflow: auto es lo mismo que lo anterior pero automatico
+
+para poner margin o padding a un solo lado y no a los cuatro se va aplicar de la misma manera es decir en sentido horario
+margin-top: 10px
+margin-bottom: 10px
+margin-right:
+margin-left:
+
+pero no hace falta poner esto asi se puede poner de esta manera en el sentido horario
+margin: 10px, 0px, 5px 7px;
+el orden de estos margenes es primero arriba despues a la derecha despues abajo y despues a la izquierda
+esto mismo se puede hacer con padding
+padding: 20px 10px; de esta manera estoy diciendo que arriba y abajo tenga un padding de 20px y a derecha y abajo 10 px lo mismo puedo hacer con margin
+
+Con display voy a poder hacer que una etiqueta en bloque sea en linea si quiero y una en linea si quiero en bloque tambien
+
+por ejemplo las etiquetas li son en bloque
+entonces puedo decirles que los li se pongan uno al lado del otro con la propiedad display
+display: inline-block se ponen todos en linea
+margin-right: 5px; hago que no esten tan juntos uno al lado del otro
+
+Puedo hacer que el span que es en linea que sea en bloque
+span {
+	display:block;
+}
+
+Si quiero centrar el menu del nav le doy al ul un width: 100% y un text-align:center y ya esta 
+
+Si quiero que un elemento del menu no se muestre mas 
+le pongo un display: none y eso hace que me borre el elemento
+
+POSICIONES:
+hay que tener cuidado con pasarse de rosca para usarlo mucho porque cuando quiera pasarlo a responsive se me va hacer bardo
+
+relative:
+
+.relative{
+	position:relative;
+	left:200px;
+}
+se mueve desde donde esta 200px desde la izquierda a la derecha pero mantiene su tamaño
+
+absolute:
+
+.absolute{
+	position:absolute
+}
+lo que hace es que pierda el flujo del html el elemento es decir como que queda flotando en la pantalla y el elemento que esta abajo toma el lugar que tenia el elemento que esta flotando ahora
+
+VIEWPORT: es todo lo que yo veo
+
+fixed:
+
+sirve para que cuando scrolleo el elemento me siga apareciendo y no se me vaya de mi viewport como pasa con el loguito de wpp en algunas paginas 
+
+.fixed{
+	position: fixed;
+	left: 800px;
+	top: 800px;
+}
+
+sticky:
+
+.sticky{
+	position: sticky;
+	top: 0px;
+}
+
+z-index: 30 se usa para cuando se superponen elementos con position 

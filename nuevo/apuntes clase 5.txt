@@ -1,0 +1,32 @@
+flexbox t permite maquetar nuestra pagina de una forma unidereccional
+flexbox permite que elementos se pongan uno al lado del otro o uno abajo del otro de manera en bloque
+no es colocar como queramos para eso esta POSITION esto es de manera unidireccional porque es para arriba o para abajo
+Hay que comprender bien padres e hijos 
+No necesirtas usar float ahora o position
+Te permite poner los elementos uno al lado del otro. Y asi hacerlo responsive
+Si tengo un contenedor padre y le aplico flexbox al contenedor padre ese flexbox se le va a aplicar a todos los hijos dentro del contenedor padre
+Si tengo que aplicar flexbox a un contenedor padre se le va a aplicar el flexbox a los HIJOS NO A LOS NIETOS. solo se le aplica flexbox a los HIJOS DIRECTOS
+
+El display:flex hace que se t pongan los contenedores uno al lado del otro
+
+flex-direction: row, t pone uno al lado de la otra en horizontal, tambien se puede aplicar row-reverse, column y column-reverse
+
+TODASA LAS PROPIEDADES DE FLEX SIEMPRE SE VAN A APLICAR AL PADRE
+
+flex-wrap: wrap; lo que voy a hacer es que todos los contenedores buscan espacio para adaptarse al contenedor y adaptan su tamaño para entrar en el contenedor
+flex-flow: row wrap; es lo mismo que poner el flex-direction y el flex-wrap en una sola propiedad
+justify-content: center; el contenido se me centro horizontalmente
+align-items: center ;me mueve el contenido verticalmente
+align-content: center; lo que hace es mover todo en bloques y se usa con el flex-wrap
+
+todo contenido que agregues en el medio cuenta como una caja
+
+cuando aplicamos display:flex viene por default en row
+
+si quiero aplicar todas estas propiedades de justify-content, align-items y todas las que vi tengo que aplicar en la clase padre el display:flex; Sino todas las propiedades estas que son de display:flex no se aplican
+
+el justify-content alinea todo horizontalmente
+se puede combinar el justify-content con el flex: column y empieza a acomodar de la misma manera que acomoda horizontalmente pero ahora verticalmente y si le agrego un align-items:center; va a acomodar de manera horizontalmente en el centro
+
+si hago un justify-content de 3 div a los div les puedo dar el orden que quiero esto lo hago con la propiedad order:1 y me lo pone a ese div al final por ejemplo si estaba primero 
+ 

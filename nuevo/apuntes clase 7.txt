@@ -1,0 +1,34 @@
+Mobile first
+Primero nosotros vamos a desarrollar para mobile porque es mas facil desarrollar para algo mas chico a algo mas grando que para de algo mas grande a algo mas chico porque se me va a romper algo
+
+en mobile voy a usar una columna y en desktop voy a usar 3
+
+Diseño responsive: adaptable a todos los dispositivos o vistas 
+vistas:dispositivos
+vista mobila, vista tablet y vista desktop
+
+Si hago responsive y hay un scroll lateral es porque la pagina no es responsive, NO puede haber scroll lateral
+
+Media query
+es una propiedad de css los meda querie y se escriben cpn un arroba
+
+@media screen and(min-width: 1024px){
+	.div__container{
+		background-color:red;
+	}
+	.img__messi{
+		display:block;
+	}
+} esto significa que cuando la pantalla sea mas grande que 768px hace lo que esta aca adentro ademas hereda las propiedades anteriores al media querie no es necesario si ya esta el flex volverlo a poner por ejemplo porque ya esta lo hereda de antes si antes lo puso solamente pongo el flex-direction:row y me cambia la orientacion si antes estaba vertical
+
+por lo general 768 es para tablets y 1024 para desktop
+
+esta bueno que cada vez que escribo un media querie comente para que dispositivo es asi no me pierdo
+
+Ponerle grid al body es una mala practica entonces encapsulo todo en un div y a ese le agrego el grid
+
+overflow-y:hidden
+overflow-y:auto lo qye hace es sacar la barra lateral
+
+target="_blank" lo que t hace es que el link que t pone t mande a otra pagina pero t abra otra pestaña para eso y no t cierre la actual 
+

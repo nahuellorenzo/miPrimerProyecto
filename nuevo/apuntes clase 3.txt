@@ -1,0 +1,83 @@
+importante el box sizing border box
+para que no se sumen los border, margin y padding
+y se calculen directamente el tamaño de la caja padre
+ esto se pone en el selector que es un asterisco asi se lo aplico a toda la pagina
+enytonces me quedaria
+*{
+	margin:0;
+	padding:0
+	box sizing
+	border box
+}
+
+font-weight: bold te pone en negrita 
+list-style: none me saca los puntos de la lista
+
+todo tipo de estilo me conviene css no poner la etiqueta strong de html
+
+font-size: 200% crece un 200% en base a su fuente original
+
+las fuentes de css son horribles asi que busco fuentes en google fonts
+siempre nuestro archivo css en el head del html va a quedar ultimo
+
+
+line-height: 2 es el interlineado
+text-decoration: none saco el subrayado de los enlaces
+text-decoration: underline me va a subrayar el texto
+text-decoration: overline me va poner una linea arriba de la palabra
+
+background-color: red
+background-image: url(pongo la ruta de la imagen)
+background-size: contain; achico la imagen en su contenedor 
+background-repeat no repeat; no lo repito todas las imagenes
+background-position: right center: me lo mueve a la derecha y me lo centra
+background-position: center center: me lo mueve al centro teniendo en cuenta el eje horizontal y me lo centra teniendo en cuenta el eje vertical
+
+medidas absolutas son los pixeles (px)
+medidas relativas (rem, porcentaje, viewport)
+
+el rem se adapta al tamaño de la pantalla
+por ejemplo
+1 rem= 16px
+si quiero que un rem sea 10 px voy a resetear un valor para que el rem valga 10px
+*{
+	font-size:62,5%
+}
+ahora el rem va a ser 10px
+
+ahora en mis estilos voy a poder poner la propiedad asi:
+font-size: 2rem
+
+el viewport me sirve para 
+
+height: 100vh hago que a lo que le aplico el estilo utilice el 100 porcientop del largo de mi pantalla la 'v' es de viewport y la h de height
+width: 100vw hago que a lo que le aplico el estilo utilice el 100 porcientop del ancho de mi pantalla
+
+
+
+
+
+APUNTES DE UN COMPAÑERO
+
+Unidades de medida: 
+        px (pixel)
+        rem (se adapta al tamaño de pantalla, un rem son 16px)
+        %
+        62,5% es igual a 10px. Recomendable poner font-size: 62,5%; en el reset.
+        vh (viewport height, tamaño de pantalla. 50vh sería la mitad de página, por ejemplo)
+
+Propiedades comunes/usadas:
+        text-align (posición del texto)
+        line-height (interlineado de párrafo por ejemplo)
+        font-weight (negritas, por ejemplo)
+        font-style (tipo de letra)
+        font-family (familia de la letra. Roboto, por ejemplo)
+        font-size (tamaño)
+        padding, margin (distancia, separación)
+        text-decoration: none (saca el subrayado del li)
+        list-style: none (saca el estilo de lista)
+        background-color (color de fondo)
+        background-image (imagen de fondo)
+        background-size: {contain, auto, cover} (contain se pone del tamaño del contenedor)
+        background-repeat: no repeat (para quitar la repetición del background)
+        background-position (posición del background. {center, right-center, etc}

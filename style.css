@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+header{
+    height: 20vh;
+    background-color: rgb(42, 43, 46);
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+}
+
+.header__menu__ul__li__a{
+    text-decoration: none;
+    color: rgb(240, 247, 238)
+}
+
+.header__div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 1.5%;
+    top: 12%;
+    background-color: transparent;
+}
+
+.header__menu__ul{
+    float: right;
+    padding-top: 2rem;
+}
+
+.header__menu__ul__li{
+    display: inline;
+    margin: 2rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.fuente{
+    font-family: 'Russo One', sans-serif;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    background-color: rgb(240, 247, 238)
+}
+
+.main__h1{
+    text-align: center;
+    font-size: 6rem;
+}
+
+.main__actividades{
+    background-color: rgb(240, 247, 238);
+}
+
+.main__actividades__article__div {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+}
+
+.main__actividades__article__div__h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main__actividades__article__p {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 100px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.main__instalaciones{
+    background-color: rgb(245, 196, 52);
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+.whatsApp__div{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    position: fixed;
+    left: 93%;
+    top: 80%;
+    
+}
+
+footer{
+    width: 100vw;
+    height: 30vh;
+    background-color:  rgb(42, 43, 46);
+    overflow: auto;
+}
+
+.footer__logo{
+    height: 100px;
+    width: 100px;
+    left: 1.5%;
+    top: 125%;
+    background-color: transparent;
+    position: absolute;
+}
+
+.footer__redes{
+    margin: 1rem;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer__redes__div{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+}
+
+.footer__separacion {
+    display: absolute;
+    border-top: 4px solid rgb(245, 196, 52);
+    height: 2px;
+    max-width: 60%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+.footer__aclaracion{
+    height: 40%;
+    width: 100%;
+    color: rgb(240, 247, 238);
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 2.5rem;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

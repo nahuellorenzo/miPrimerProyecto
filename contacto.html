@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./imagenes/favicon-32x32.png">
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="./index.html"><img src="./imagenes/gymPoint_logo.png" alt="logo_gympoint"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./gimnasios.html">Gimnasios</a></li>
+                <li><a href="./planes.html">Planes</a></li>
+                <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contactanos</h1>
+        <div>
+            <p>¡Hola!</p>
+            <p>Escribí tus datos y contanos tu inquietud. Te daremos una respuesta en menos de 24 horas hábiles.</p>
+        </div>
+
+        <form>
+            <fieldset>
+                <legend>Contactanos</legend>
+                    <!-- Datos personales -->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <div>Apellido:</div>
+                    <input type="text" name="nombre" placeholder="Apellido">
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="E-mail">
+
+                    <!-- Datos de usuario-->
+                    <label for="usario">Soy usuario</label>
+                    <input type="radio" name="usuario" value="soy">
+                    <label for="usuario">No soy usuario</label>
+                    <input type="radio" name="usuario" value="noSoy">
+
+                    <!-- Datos de la ciudad -->
+                    <label for="provincias">Provincia: </label>
+                    <select name="provincias" id="provincias">
+                        <option value="bsAs">Buenos Aires</option>
+                        <option value="mendoza">Mendoza</option>
+                        <option value="santaFe">Santa Fe</option>
+                    </select>
+                    <label for="ciudades">Ciudad: </label>
+                    <select name="ciudades" id="ciudades">
+                        <option value="berazategui">Berazategui</option>
+                        <option value="quilmes">Quilmes</option>
+                        <option value="laPlata">La Plata</option>
+                        <option value="palermo">Palermo</option>
+                        <option value="sanRafael">San Rafael</option>
+                        <option value="rosario">Rosario</option>
+                    </select>
+                    
+                    <!-- Envio y mensajes a desarrollar-->
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+                    <div>Acepta terminos y condiciones?</div>
+                    <input type="checkbox" name="acepta" value="1">
+                    <input type="submit">
+                    <input type="reset" value="Limpiar info">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <img src="./imagenes/gymPoint_logo.png" alt="logo_gympoint">
+        </div>
+
+        <section>
+            <div>
+                <a href="#"><img src="./imagenes/logo_facebook.png" alt="facebook"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./imagenes/icono_correo_electronico.png" alt="correo_electronico"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./imagenes/logo_instagram.png" alt="instagram"></a>
+            </div>
+        </section>
+
+        <div></div>
+
+        <div>
+            <p>En gymPoint cuidamos tu salud, por eso te recordamos que tu apto médico es indispensable al momento de iniciar una actividad física.Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
