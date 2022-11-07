@@ -4,74 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>preEntrega1</title>
     <link rel="shortcut icon" href="./imagenes/favicon-32x32.png">
+    <title>preEntrega1</title>
+
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- CSS Main -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
     <header>
-        <div class="header__div">
-            <a class="header__div__a" href="./index.html"><img src="./imagenes/gymPoint_logo.png" alt="logo_gympoint"></a>
-        </div>
-        <nav class="header__menu">
-            <ul class="header__menu__ul">
-                <li class="header__menu__ul__li fuente"><a class="header__menu__ul__li__a" href="./index.html">Inicio</a></li>
-                <li class="header__menu__ul__li fuente"><a class="header__menu__ul__li__a" href="./pages/gimnasios.html">Gimnasios</a></li>
-                <li class="header__menu__ul__li fuente"><a class="header__menu__ul__li__a" href="./pages/planes.html">Planes</a></li>
-                <li class="header__menu__ul__li fuente"><a class="header__menu__ul__li__a" href="./pages/sobreNosotros.html">Sobre nosotros</a></li>
-                <li class="header__menu__ul__li fuente"><a class="header__menu__ul__li__a" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg color">
+            <div class="container-fluid">
+              <div class="header__nav__div__logo">
+                <a href="./index.html"><img src="./imagenes/gymPoint_logo.png" alt="logo_gympoint"></a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color ul__li__a__activo" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color" href="./pages/sobreNosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color" href="./pages/gimnasios.html">Gimnasios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color" href="./pages/planes.html">Planes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="main">
-        <h1 class="main__h1 fuente">EL LUGAR QUE NECESITABAS PARA VOS</h1>
+        <h1 class="main__h1 fuente">El lugar que necesitabas para vos</h1>
 
         <!-- Seccion de actividades del gimnasio -->
-        <section class="main__actividades">
-            <article>
-                <div class="main__actividades__article__div">
+        <section class=" container-fluid main__actividades">
+            <div class="row">
+                <article class="col-md-4 cold-xs-12 hola">
                     <h2 class="main__actividades__article__div__h2 fuente">Musculacion</h2>
-                    <img src="./imagenes/musculacion.png" alt="musculacion">
-                </div>
-                <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem nobis quisquam. Doloribus ad quam sunt dignissimos facilis ducimus. Assumenda dicta dolorum modi consequuntur facere, voluptate ex animi maiores soluta!</p>
-            </article>
-            <article>
-                <div class="main__actividades__article__div">
+                    <div class="main__actividades__article__div">
+                        <img src="./imagenes/musculacion.png" alt="musculacion">
+                    </div>
+                    <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem nobis quisquam. Doloribus ad quam sunt dignissimos facilis ducimus. Assumenda dicta dolorum modi consequuntur facere, voluptate ex animi maiores soluta!</p>
+                </article>
+                <article class="col-md-4 cold-xs-12 hola">
                     <h2 class="main__actividades__article__div__h2 fuente">Deportes</h2>
-                    <img src="./imagenes/deportes.png" alt="deportes">
-                </div>
-                <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi tempore delectus modi odit reiciendis, minima nostrum fugit placeat, qui nam corporis, blanditiis illum officia sequi numquam dolor sapiente. Incidunt?</p>
-            </article>
-            <article>
-                <div class="main__actividades__article__div">
+                    <div class="main__actividades__article__div">
+                        <img src="./imagenes/deportes.png" alt="deportes">
+                    </div>
+                    <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi tempore delectus modi odit reiciendis, minima nostrum fugit placeat, qui nam corporis, blanditiis illum officia sequi numquam dolor sapiente. Incidunt?</p>
+                </article>
+                <article class="col-md-4 cold-xs-12 hola">
                     <h2 class="main__actividades__article__div__h2 fuente">Natacion</h2>
-                    <img src="./imagenes/natacion.png" alt="natacion">
-                </div>
-                <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae, aspernatur quasi officia rerum harum illum nemo eum est. Aspernatur qui ipsa tenetur. Dicta sapiente, ipsam unde voluptas esse inventore.</p>
-            </article>
-            <article>
-                <div class="main__actividades__article__div">
+                    <div class="main__actividades__article__div">
+                        <img src="./imagenes/natacion.png" alt="natacion">
+                    </div>
+                    <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae, aspernatur quasi officia rerum harum illum nemo eum est. Aspernatur qui ipsa tenetur. Dicta sapiente, ipsam unde voluptas esse inventore.</p>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-md-4 cold-xs-12 hola">
                     <h2 class="main__actividades__article__div__h2 fuente">Fitness</h2>
-                    <img src="./imagenes/fitness.png" alt="fitness">
-                </div>
-                <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, commodi rem veritatis voluptatum atque repellat quaerat adipisci dolor velit fugiat sed earum tempora. Ipsam cumque dolore laboriosam debitis, reprehenderit atque.</p>
-            </article>
-            <article>
-                <div class="main__actividades__article__div">
+                    <div class="col-md-4 cold-xs-12 main__actividades__article__div">
+                        <img src="./imagenes/fitness.png" alt="fitness">
+                    </div>
+                    <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, commodi rem veritatis voluptatum atque repellat quaerat adipisci dolor velit fugiat sed earum tempora. Ipsam cumque dolore laboriosam debitis, reprehenderit atque.</p>
+                </article>
+                <article class="col-md-4 cold-xs-12 hola">
                     <h2 class="main__actividades__article__div__h2 fuente">Kids</h2>
-                    <img src="./imagenes/kids.png" alt="kids">
-                </div>
-                <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita adipisci ducimus, maiores voluptatibus corrupti facere deserunt magnam, quibusdam impedit assumenda placeat et incidunt nihil numquam dolor optio quis alias minus.</p>
-            </article>
-            <article>
-                <div class="main__actividades__article__div">
+                    <div class="col-md-4 cold-xs-12 main__actividades__article__div">
+                        <img src="./imagenes/kids.png" alt="kids">
+                    </div>
+                    <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita adipisci ducimus, maiores voluptatibus corrupti facere deserunt magnam, quibusdam impedit assumenda placeat et incidunt nihil numquam dolor optio quis alias minus.</p>
+                </article>
+                <article class="col-md-4 cold-xs-12 hola">
                     <h2 class="main__actividades__article__div__h2 fuente">Adultos Mayores</h2>
-                    <img src="./imagenes/adultosMayores.png" alt="adultosMayores">
-                </div>
-                <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis excepturi delectus ipsum quidem repudiandae dolorem laborum sapiente consectetur eius, dolor quasi harum labore, quod esse dolores. Deserunt, id non?</p>
-            </article>
+                    <div class="col-md-4 cold-xs-12 main__actividades__article__div">
+                        <img src="./imagenes/adultosMayores.png" alt="adultosMayores">
+                    </div>
+                    <p class="main__actividades__article__p fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis excepturi delectus ipsum quidem repudiandae dolorem laborum sapiente consectetur eius, dolor quasi harum labore, quod esse dolores. Deserunt, id non?</p>
+                </article>
+            </div>
         </section>
 
         <!-- Seccion de instalaciones del gimnasio -->
@@ -129,5 +156,9 @@
         </div>
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 </html>
+
