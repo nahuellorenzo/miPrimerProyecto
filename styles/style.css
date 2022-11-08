@@ -17,6 +17,7 @@
 header{
     position: sticky;
     top: 0px;
+    z-index: 3;
 }
 
 .color{
@@ -98,23 +99,14 @@ header{
 
 .main__actividades__article__p {
     font-size: 0.8rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: rgb(240, 247, 238);
 }
 
 .main__instalaciones{
     background-color: rgb(245, 196, 52);
     overflow: auto;
-}
-
-.whatsApp__div{
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-    position: fixed;
-    left: 90%;
-    top: 80%;
-    
 }
 
 footer{
@@ -129,41 +121,13 @@ footer{
     width: 100px;
     grid-area: logo;
     background-color: transparent;
-    
+    margin-top: 20px;
 }
 
 .footer__redes{
     grid-area: redes;
 }
 
-.footer__redes__div{
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-}
-
-.footer__separacion {
-    display: absolute;
-    border-top: 2px solid rgb(245, 196, 52);
-    height: 2px;
-    max-width: 60%;
-    padding: 0;
-    margin: 20px auto 0 auto;
-}
-
-.separacion{
-    grid-area: linea;
-}
-
-.footer__aclaracion{
-    height: 40%;
-    width: 100%;
-    color: rgb(240, 247, 238);
-    padding-top: 2rem;
-    padding-left: 2rem;
-    font-size: 1rem;
-    grid-area: descripcion;
-}
 
 img{
     height: 100%;
@@ -186,26 +150,206 @@ img{
     border: rgb(245, 196, 52) 0.2em solid;
     border-radius: 2.5rem 0 2.5rem 0;
 }
+  
+  .wrapper .icon {
+    position: relative;
+    background: rgb(42, 43, 46);
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
 
-.statico{
-        position:static;
-}
-
-.altura{
-    height: 630px;
-}
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 3;
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+  }
+  
+  
+/* VISTA MOBILE = MOBILE FIRST*/
 
 .grilla{
     display: grid;
     grid-template-areas:
-        "logo redes"
-        "linea linea"
-        "descripcion descripcion";
-    grid-template-rows: 100px 20px 100px; 
-    grid-template-columns: 1fr 2fr;
+            "logo"
+            "redes"
+            "descripcion";
+    justify-items: center;
+    
 }
 
-.footer__redes__ul{
+.wrapper {
     display: flex;
-    justify-content:flex-start;
+    flex-direction: column;
+    list-style: none;
+    height: 200px;
+    width: 100%;
+    padding-top: 20px;
+    margin-right: 30px;
+    font-family: "Poppins", sans-serif;
+    justify-content: flex-start;
+  }
+
+  .footer__aclaracion{
+    height: 40%;
+    width: 100%;
+    color: rgb(240, 247, 238);
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    grid-area: descripcion;
+}
+
+.whatsApp__div{
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    position: fixed;
+    left: 83%;
+    top: 90%;  
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1024px){
+    .altura{
+        height: 630px;
+    }
+
+    .grilla{
+        display: grid;
+        grid-template-areas:
+            "logo redes"
+            "linea linea"
+            "descripcion descripcion";
+        grid-template-rows: 100px 20px 100px; 
+        grid-template-columns: 1fr 1.5fr;
+        justify-items: flex-start;
+    }
+
+    .footer__redes__ul{
+        display: flex;
+        justify-content:flex-start;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        height: 120px;
+        width: 100%;
+        padding-top: 40px;
+        font-family: "Poppins", sans-serif;
+        justify-content: flex-start;
+      }
+
+      .footer__separacion {
+        display: absolute;
+        width: 100vw;
+        border-top: 2px solid rgb(245, 196, 52);
+        height: 2px;
+        max-width: 60%;
+        padding: 0;
+        margin: 20px auto 0 auto;
+    }
+
+    .footer__logo{
+        height: 100px;
+        width: 100px;
+        grid-area: logo;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+    
+    .footer__redes{
+        grid-area: redes;
+    }
+    
+    .separacion{
+        grid-area: linea;
+    }
+
+    .footer__aclaracion{
+        height: 40%;
+        width: 100%;
+        color: rgb(240, 247, 238);
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-size: 1rem;
+        grid-area: descripcion;
+    }
+
+    .whatsApp__div{
+        height: 100px;
+        width: 100px;
+        background-color: transparent;
+        position: fixed;
+        left: 90%;
+        top: 80%;  
+    }
+    
 }
