@@ -65,7 +65,8 @@ header{
 .main__h1{
     text-align: center;
     font-size: 3rem;
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
     font-weight: bold;
 }
 
@@ -85,17 +86,20 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .main__actividades__article__div__h2{
     text-align: center;
     font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .main__actividades__article__p {
     font-size: 0.8rem;
-    font-weight: bold;
     padding-left: 2rem;
+    color: rgb(240, 247, 238);
 }
 
 .main__instalaciones{
@@ -123,19 +127,13 @@ footer{
 .footer__logo{
     height: 100px;
     width: 100px;
-    left: 1.5%;
-    top: 125%;
+    grid-area: logo;
     background-color: transparent;
-    position: absolute;
+    
 }
 
 .footer__redes{
-    margin: 1rem;
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    grid-area: redes;
 }
 
 .footer__redes__div{
@@ -146,11 +144,15 @@ footer{
 
 .footer__separacion {
     display: absolute;
-    border-top: 4px solid rgb(245, 196, 52);
+    border-top: 2px solid rgb(245, 196, 52);
     height: 2px;
     max-width: 60%;
     padding: 0;
     margin: 20px auto 0 auto;
+}
+
+.separacion{
+    grid-area: linea;
 }
 
 .footer__aclaracion{
@@ -159,7 +161,8 @@ footer{
     color: rgb(240, 247, 238);
     padding-top: 2rem;
     padding-left: 2rem;
-    font-size: 2.5rem;
+    font-size: 1rem;
+    grid-area: descripcion;
 }
 
 img{
@@ -168,74 +171,41 @@ img{
 }
 
 .card {
-    width: 190px;
-    height: 120px;
-    transition: all .5s;
-    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
-               -15px -15px 30px rgba(60, 60, 60, 0.082);
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .card:hover {
-    height: 254px;
-    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
-  }
-  
-  .card .header {
-    padding: 20px;
+    width: 20rem;
+    height: 26rem;
+    background-color: #212121;
+    border-radius: 1rem;
+    border: #212121 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+    position: static;
+}
+   
+.card:hover {
+    transform: translateY(-1.5rem);
+    border: rgb(245, 196, 52) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+}
+
+.statico{
+        position:static;
+}
+
+.altura{
+    height: 630px;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas:
+        "logo redes"
+        "linea linea"
+        "descripcion descripcion";
+    grid-template-rows: 100px 20px 100px; 
+    grid-template-columns: 1fr 2fr;
+}
+
+.footer__redes__ul{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #212121;
-    margin-bottom: 16px;
-  }
-  
-  .card .header .img-box {
-    width: 50px;
-  }
-  
-  .card .header .title {
-    font-size: 1.1em;
-    letter-spacing: .1em;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 4px 0 14px 0;
-    transition: all .5s;
-    color: #edededc5;
-  }
-  
-  .card:hover .header {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-  }
-  
-  .card:hover .card .header .title {
-    padding: 0;
-  }
-  
-  .card .content {
-    display: block;
-    text-align: justify;
-    color: #212121;
-    margin: 0 18px;
-  }
-  
-  .card .content p {
-    transition: all .5s;
-    font-size: 1em;
-    margin-bottom: 8px;
-  }
-  
-  .card .content a {
-    color: #1d8122;
-    cursor: pointer;
-    transition: all .5s;
-    font-size: .8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  
-  .card .content .btn-link:hover {
-    border-bottom: 1px solid #1d8122;
-  }
+    justify-content:flex-start;
+}
