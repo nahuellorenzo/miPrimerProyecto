@@ -16,49 +16,100 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href="./../index.html"><img src="./../imagenes/gymPoint_logo.png" alt="logo_gympoint"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./../index.html">Inicio</a></li>
-                <li><a href="./gimnasios.html">Gimnasios</a></li>
-                <li><a href="./planes.html">Planes</a></li>
-                <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg color">
+            <div class="container-fluid">
+                <div class="header__nav__div__logo">
+                    <a href="./index.html"><img src="./../imagenes/gymPoint_logo.png" alt="logo_gympoint"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link ul__li__a__color" aria-current="page" href="./../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ul__li__a__color" href="./sobreNosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ul__li__a__color" href="./gimnasios.html">Gimnasios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ul__li__a__color ul__li__a__activo" href="./planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ul__li__a__color" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h1>Elegi tu plan</h1>
-        <section>
+    <main class="main">
+        <div class="row">
+            <div class="col-xs-12 main__div__div">
+                <h1 class="h1__plan">Elegi tu plan</h1>
+            </div>
+        </div>
+        <section class="row">
             <!-- Plan 1 -->
-            <article>
+            <article class="col-xs-12 col-md-6 col-lg-4">
                 <h2>Plan Total</h2>
-                <div>
-                    <div>Una tarjeta básica</div>
-                    <div>
-                        <img src="" alt="">
-                        lorem ipsum
+                <div class="card__plan">
+                    <p class="title">Standard</p>
+                    <div class="pricecontainer">
+                        <p class="price">$2.99</p>
+                        <p class="pricedescriptor">/month</p>
                     </div>
-                    <div>
-                        <a href="#">Más información</a>
+                    <p class="includes">This Plan Includes:</p>
+                    <ul class="benefitlist">
+                        <li>Awesome Benefits</li>
+                        <li>10% Discount</li>
+                    </ul>
+                    <div class="btncontainer">
+                        <button type="submit">Select This Plan</button>
                     </div>
                 </div>
             </article>
 
-            <!-- Plan 2 -->
-            <article>
-                <h2>Plan Plus</h2>
-                <div>
-                    <div>Una tarjeta básica</div>
-                    <div>
-                        <img src="" alt="">
-                        lorem ipsum
+            <!-- Plan 3 -->
+            <article class="col-xs-12 col-md-6 col-lg-4">
+                <h2>Plan Standar</h2>
+                <div class="card__plan">
+                    <p class="title">Standard</p>
+                    <div class="pricecontainer">
+                        <p class="price">$2.99</p>
+                        <p class="pricedescriptor">/month</p>
                     </div>
-                    <div>
-                        <a href="#">Más información</a>
+                    <p class="includes">This Plan Includes:</p>
+                    <ul class="benefitlist">
+                        <li>Awesome Benefits</li>
+                        <li>10% Discount</li>
+                    </ul>
+                    <div class="btncontainer">
+                        <button type="submit">Select This Plan</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Plan 3 -->
+            <article class="col-xs-12 col-md-6 col-lg-4">
+                <h2>Plan Plus</h2>
+                <div class="card__plan">
+                    <p class="title">Standard</p>
+                    <div class="pricecontainer">
+                        <p class="price">$2.99</p>
+                        <p class="pricedescriptor">/month</p>
+                    </div>
+                    <p class="includes">This Plan Includes:</p>
+                    <ul class="benefitlist">
+                        <li>Awesome Benefits</li>
+                        <li>10% Discount</li>
+                    </ul>
+                    <div class="btncontainer">
+                        <button type="submit">Select This Plan</button>
                     </div>
                 </div>
             </article> 
@@ -66,26 +117,46 @@
     </main>
 
     <footer>
-        <div>
-            <img src="./../imagenes/gymPoint_logo.png" alt="logo_gympoint">
-        </div>
-
-        <section>
-            <div>
-                <a href="#"><img src="./../imagenes/logo_facebook.png" alt="facebook"></a>
+        <div class="grilla">
+            <div class="footer__logo">
+                <img src="./../imagenes/gymPoint_logo.png" alt="logo_gympoint">
             </div>
-            <div>
-                <a href="#"><img src="./../imagenes/icono_correo_electronico.png" alt="correo_electronico"></a>
-            </div>
-            <div>
-                <a href="#"><img src="./../imagenes/logo_instagram.png" alt="instagram"></a>
-            </div>
-        </section>
 
-        <div></div>
+            <section class="footer__redes">
 
-        <div>
-            <p>En gymPoint cuidamos tu salud, por eso te recordamos que tu apto médico es indispensable al momento de iniciar una actividad física.Todos los derechos reservados.</p>
+                <ul class="wrapper">
+                    <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <div>
+                            <a href=""><img src="./../imagenes/White_Vector_Design_Images__White_Icon__White_Icons__Social__Media_PNG_Image_For_Free_Download-removebg-preview.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="icon twitter">
+                        <span class="tooltip">Twitter</span>
+                        <span><i class="fab fa-twitter"></i></span>
+                        <div>
+                            <a href=""><img src="./../imagenes/Twitter_Icon_Vector_Design_Images__Twitter_White_Icon__Twitter_Icons__White_Icons__Black_And_White_Twitter_PNG_Image_For_Free_Download-removebg-preview.png" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"></i></span>
+                        <div>
+                            <a href=""><img src="./../imagenes/Instagram_White_Clipart_Transparent_Background__Instagram_White_Icon_Free_Logo_Design_Template__Instagram_Icons__Logo_Icons__White_Icons_PNG_Image_For_Free_Download-removebg-preview.png" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Linea divisora -->
+            <div class="separacion">
+                <div class="footer__separacion"></div>
+            </div>
+
+            <div class="footer__aclaracion">
+                <p class="footer__aclaracion__p fuente">En gymPoint cuidamos tu salud, por eso te recordamos que tu apto médico es indispensable al momento de iniciar una actividad física.Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
