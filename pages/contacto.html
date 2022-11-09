@@ -6,98 +6,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="./../imagenes/favicon-32x32.png">
+
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="./../styles/style.css">
 </head>
 <body>
 
     <header>
-        <div>
-            <a href="./../index.html"><img src="./../imagenes/gymPoint_logo.png" alt="logo_gympoint"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./../index.html">Inicio</a></li>
-                <li><a href="./gimnasios.html">Gimnasios</a></li>
-                <li><a href="./planes.html">Planes</a></li>
-                <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg color">
+            <div class="container-fluid">
+              <div class="header__nav__div__logo">
+                <a href="./index.html"><img src="./../imagenes/gymPoint_logo.png" alt="logo_gympoint"></a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color" aria-current="page" href="./../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color" href="./sobreNosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color" href="./gimnasios.html">Gimnasios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color" href="./planes.html">Planes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ul__li__a__color ul__li__a__activo" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main>
-        <h1>Contactanos</h1>
-        <div>
-            <p>¡Hola!</p>
-            <p>Escribí tus datos y contanos tu inquietud. Te daremos una respuesta en menos de 24 horas hábiles.</p>
+    <main class="contacto__main">
+        <h1 class="h1__contacto fuente">Contactanos</h1>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="descripcion__contacto fuente">
+                    <p>¡Hola!</p>
+                    <p>Escribí tus datos y contanos tu inquietud. Te daremos una respuesta en menos de 24 horas hábiles.</p>
+                </div>
+            </div>
+           <div class="col-xs-12 col-md-8">
+            
+
+            <form class="container row g-3 color__form">
+                <div class="col-md-5 textInputWrapper">
+                <label for="inputNombre" class="form-label form__label fuente">Nombre</label>
+                  <input type="text" placeholder="Nombre" class="form-control textInput" id="inputNombre">
+                </div>
+                <div class="col-md-5 textInputWrapper">
+                    <label for="inputApellido" class="form-label form__label fuente">Apellido</label>
+                  <input type="text" placeholder="Apellido" class="form-control textInput" id="inputApellido">
+                </div>
+                <div class="col-md-10 textInputWrapper">
+                    <label for="inputEmail4" class="form-label form__label fuente">Email</label>
+                    <input type="email" placeholder="Email" class="form-control textInput" id="inputEmail4">
+                </div>
+                <div class="col-md-6 textInputWrapper">
+                    <label for="inputState" class="form-label form__label fuente">Ciudad</label>
+                  <select id="inputState" placeholder="Ciudad" class="form-select textInput">
+                    <option value="berazategui">Berazategui</option>
+                    <option value="quilmes">Quilmes</option>
+                    <option value="laPlata">La Plata</option>
+                    <option value="palermo">Palermo</option>
+                    <option value="sanRafael">San Rafael</option>
+                    <option value="rosario">Rosario</option>
+                  </select>
+                </div>
+                <div class="col-md-4 textInputWrapper">
+                    <label for="inputCodigo" class="form-label form__label fuente">Codigo Postal</label>
+                    <input type="text" placeholder="Codigo postal" class="form-control textInput" id="inputCodigo">
+                </div>
+                <div class="col-md-10 textInputWrapper">
+                    <label class="form-label form__label fuente">Dejanos tu mensaje!</label>
+                    <textarea class="form-control textInput" placeholder="Escribí aqui" aria-label="With textarea"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-warning boton__form">
+                    Enviar
+                </button>
+                </div>
+              </form>
+            </div>
         </div>
+            <!--
+            <form class="col xs-12">
+                <fieldset>
+                    <legend>Contactanos</legend>-->
+                        <!-- Datos personales 
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <div>Apellido:</div>
+                        <input type="text" name="nombre" placeholder="Apellido">
+                        <label for="email">E-mail:</label>
+                        <input type="email" placeholder="E-mail">-->
 
-        <form>
-            <fieldset>
-                <legend>Contactanos</legend>
-                    <!-- Datos personales -->
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <div>Apellido:</div>
-                    <input type="text" name="nombre" placeholder="Apellido">
-                    <label for="email">E-mail:</label>
-                    <input type="email" placeholder="E-mail">
+                        <!-- Datos de usuario
+                        <label for="usario">Soy usuario</label>
+                        <input type="radio" name="usuario" value="soy">
+                        <label for="usuario">No soy usuario</label>
+                        <input type="radio" name="usuario" value="noSoy"> -->
 
-                    <!-- Datos de usuario-->
-                    <label for="usario">Soy usuario</label>
-                    <input type="radio" name="usuario" value="soy">
-                    <label for="usuario">No soy usuario</label>
-                    <input type="radio" name="usuario" value="noSoy">
-
-                    <!-- Datos de la ciudad -->
-                    <label for="provincias">Provincia: </label>
-                    <select name="provincias" id="provincias">
-                        <option value="bsAs">Buenos Aires</option>
-                        <option value="mendoza">Mendoza</option>
-                        <option value="santaFe">Santa Fe</option>
-                    </select>
-                    <label for="ciudades">Ciudad: </label>
-                    <select name="ciudades" id="ciudades">
-                        <option value="berazategui">Berazategui</option>
-                        <option value="quilmes">Quilmes</option>
-                        <option value="laPlata">La Plata</option>
-                        <option value="palermo">Palermo</option>
-                        <option value="sanRafael">San Rafael</option>
-                        <option value="rosario">Rosario</option>
-                    </select>
-                    
-                    <!-- Envio y mensajes a desarrollar-->
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
-                    <div>Acepta terminos y condiciones?</div>
-                    <input type="checkbox" name="acepta" value="1">
-                    <input type="submit">
-                    <input type="reset" value="Limpiar info">
-            </fieldset>
-        </form>
+                        <!-- Datos de la ciudad
+                        <label for="provincias">Provincia: </label>
+                        <select name="provincias" id="provincias">
+                            <option value="bsAs">Buenos Aires</option>
+                            <option value="mendoza">Mendoza</option>
+                            <option value="santaFe">Santa Fe</option> 
+                        </select>
+                        <label for="ciudades">Ciudad: </label>
+                        <select name="ciudades" id="ciudades">
+                            <option value="berazategui">Berazategui</option>
+                            <option value="quilmes">Quilmes</option>
+                            <option value="laPlata">La Plata</option>
+                            <option value="palermo">Palermo</option>
+                            <option value="sanRafael">San Rafael</option>
+                            <option value="rosario">Rosario</option>
+                        </select>  -->
+                        
+                        <!-- Envio y mensajes a desarrollar
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+                        <div>Acepta terminos y condiciones?</div>
+                        <input type="checkbox" name="acepta" value="1">
+                        <input type="submit">
+                        <input type="reset" value="Limpiar info">
+                </fieldset>
+            </form> -->
+        
     </main>
 
     <footer>
-        <div>
-            <img src="./../imagenes/gymPoint_logo.png" alt="logo_gympoint">
-        </div>
-
-        <section>
-            <div>
-                <a href="#"><img src="./../imagenes/logo_facebook.png" alt="facebook"></a>
+        <footer>
+            <div class="grilla">
+                <div class="footer__logo">
+                    <img src="./../imagenes/gymPoint_logo.png" alt="logo_gympoint">
+                </div>
+    
+                <section class="footer__redes">
+    
+                    <ul class="wrapper">
+                        <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                            <div>
+                                <img src="./../imagenes/White_Vector_Design_Images__White_Icon__White_Icons__Social__Media_PNG_Image_For_Free_Download-removebg-preview.png" alt="">
+                            </div>
+                        </li>
+                        <li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fab fa-twitter"></i></span>
+                            <div>
+                                <img src="./../imagenes/Twitter_Icon_Vector_Design_Images__Twitter_White_Icon__Twitter_Icons__White_Icons__Black_And_White_Twitter_PNG_Image_For_Free_Download-removebg-preview.png" alt="">
+                            </div>
+                        </li>
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                            <div>
+                                <img src="./../imagenes/Instagram_White_Clipart_Transparent_Background__Instagram_White_Icon_Free_Logo_Design_Template__Instagram_Icons__Logo_Icons__White_Icons_PNG_Image_For_Free_Download-removebg-preview.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+    
+                <!-- Linea divisora -->
+                <div class="separacion">
+                    <div class="footer__separacion"></div>
+                </div>
+    
+                <div class="footer__aclaracion">
+                    <p class="footer__aclaracion__p fuente">En gymPoint cuidamos tu salud, por eso te recordamos que tu apto médico es indispensable al momento de iniciar una actividad física.Todos los derechos reservados.</p>
+                </div>
             </div>
-            <div>
-                <a href="#"><img src="./../imagenes/icono_correo_electronico.png" alt="correo_electronico"></a>
-            </div>
-            <div>
-                <a href="#"><img src="./../imagenes/logo_instagram.png" alt="instagram"></a>
-            </div>
-        </section>
-
-        <div></div>
-
-        <div>
-            <p>En gymPoint cuidamos tu salud, por eso te recordamos que tu apto médico es indispensable al momento de iniciar una actividad física.Todos los derechos reservados.</p>
-        </div>
+        </footer>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
