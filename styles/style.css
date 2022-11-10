@@ -10,7 +10,7 @@
 header{
     position: sticky;
     top: 0px;
-    z-index: 3;
+    z-index: 4;
 }
 
 .color{
@@ -364,7 +364,7 @@ img{
     position: absolute;
     pointer-events: none;
     bottom: -1px;
-    z-index: 4;
+    z-index: 3;
     width: 100%;
 }
 
