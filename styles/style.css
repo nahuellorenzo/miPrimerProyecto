@@ -17,6 +17,14 @@ header{
     background-color: rgb(42, 43, 46);
 }
 
+.color__button__var{
+    border: black solid 1px;
+}
+
+.nav__color__hover:hover {
+    color: rgb(245, 196, 52);
+}
+
 .ul__li__a__color{
     text-decoration: none;
     color: rgb(240, 247, 238);
@@ -77,6 +85,7 @@ img{
     padding-top: 3rem;
     padding-bottom: 2rem;
     font-weight: bold;
+    margin: 1rem;
 }
 
 .main__actividades{
@@ -443,6 +452,8 @@ img{
     }
 
 }
+
+
 
 /* GIMNASIOS PAGE*/
 
